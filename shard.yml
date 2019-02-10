@@ -1,0 +1,15 @@
+name: mandrill
+version: 0.1.0
+
+authors:
+  - name <wind@osmond.club>
+
+description: |
+  A Crystal API library for the Mandrill email as a service platform.
+
+dependencies:
+  crest:
+    github: mamantoha/crest
+    version: "~> 0.5"
+
+license: MIT
