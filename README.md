@@ -13,7 +13,7 @@ Install the Mandrill API client as a shard:
 ```crystal
 dependencies:
   mandrill:
-    github: xosmond/mandrill
+    github: xosmond/mandrill.cr
     branch: master
 ```
 
