@@ -1,5 +1,7 @@
 # Mandrill
 
+Just migrated almost all implementation from ruby mandrill gem.
+
 ## Requirements
 
 Crystal 0.27.0
@@ -26,10 +28,6 @@ mandrill = Mandrill::API.new 'YOUR_API_KEY'
 ```
 
 After that, you're ready to start making calls.
-
-Questions? Problems?
-
-Have you run into difficulties or a method just doesn't seem to work right? Check out our API Support options and we'll be happy to assist you.
 
 ### API Call Categories:
 
