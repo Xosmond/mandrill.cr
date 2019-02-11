@@ -46,6 +46,9 @@ After that, you're ready to start making calls.
 * Ips
 * Metadata
 
+## Documentation
+Documentation Available [here](https://xosmond.github.io/mandrill.cr/index.html)
+
 ## Contributors
 
 - [xosmond](https://github.com/xosmond) Jordano Moscoso - creator, maintainer

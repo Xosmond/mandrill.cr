@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.26.1">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/Xosmond/mandrill.cr">
+  <title>Mandrill::Messages - github.com/Xosmond/mandrill.cr</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="github.com/Xosmond/mandrill.cr/Mandrill" data-name="mandrill">
+      <a href="../Mandrill.html">Mandrill</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/API" data-name="mandrill::api">
+      <a href="../Mandrill/API.html">API</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Exports" data-name="mandrill::exports">
+      <a href="../Mandrill/Exports.html">Exports</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Inbound" data-name="mandrill::inbound">
+      <a href="../Mandrill/Inbound.html">Inbound</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Internal" data-name="mandrill::internal">
+      <a href="../Mandrill/Internal.html">Internal</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Ips" data-name="mandrill::ips">
+      <a href="../Mandrill/Ips.html">Ips</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/Xosmond/mandrill.cr/Mandrill/Messages" data-name="mandrill::messages">
+      <a href="../Mandrill/Messages.html">Messages</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Metadata" data-name="mandrill::metadata">
+      <a href="../Mandrill/Metadata.html">Metadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Rejects" data-name="mandrill::rejects">
+      <a href="../Mandrill/Rejects.html">Rejects</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Senders" data-name="mandrill::senders">
+      <a href="../Mandrill/Senders.html">Senders</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Subaccounts" data-name="mandrill::subaccounts">
+      <a href="../Mandrill/Subaccounts.html">Subaccounts</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Tags" data-name="mandrill::tags">
+      <a href="../Mandrill/Tags.html">Tags</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Templates" data-name="mandrill::templates">
+      <a href="../Mandrill/Templates.html">Templates</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Urls" data-name="mandrill::urls">
+      <a href="../Mandrill/Urls.html">Urls</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Users" data-name="mandrill::users">
+      <a href="../Mandrill/Users.html">Users</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Webhooks" data-name="mandrill::webhooks">
+      <a href="../Mandrill/Webhooks.html">Webhooks</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Whitelists" data-name="mandrill::whitelists">
+      <a href="../Mandrill/Whitelists.html">Whitelists</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Mandrill::Messages
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Mandrill/Messages.html">Mandrill::Messages</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill/api.cr#L1666" target="_blank">
+        mandrill/api.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28master%29-class-method" class="signature"><strong>.new</strong>(master)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#cancel_scheduled%28id%29-instance-method" class="signature"><strong>#cancel_scheduled</strong>(id)</a>
+        
+          <div class="summary"><p>Cancels a scheduled email.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#content%28id%29-instance-method" class="signature"><strong>#content</strong>(id)</a>
+        
+          <div class="summary"><p>Get the full content of a recently sent message @param [String] id the unique id of the message to get - passed as the "_id" field in webhooks, send calls, or search calls @return [Hash] the content of the message     - [Integer] ts the Unix timestamp from when this message was sent     - [String] <em>id the message's unique id     - [String] from</em>email the email address of the sender     - [String] from_name the alias of the sender (if any)     - [String] subject the message's subject line     - [Hash] to the message recipient's information         - [String] email the email address of the recipient         - [String] name the alias of the recipient (if any)     - [Array] tags list of tags on this message         - [String] tags[] individual tag on this message     - [Hash] headers the key-value pairs of the custom MIME headers for the message's main document     - [String] text the text part of the message, if any     - [String] html the HTML part of the message, if any     - [Array] attachments an array of any attachments that can be found in the message         - [Hash] attachments[] information about an individual attachment             - [String] name the file name of the attachment             - [String] type the MIME type of the attachment             - [String] content the content of the attachment as a base64 encoded string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#info%28id%29-instance-method" class="signature"><strong>#info</strong>(id)</a>
+        
+          <div class="summary"><p>Get the information for a single recently sent message @param [String] id the unique id of the message to get - passed as the "_id" field in webhooks, send calls, or search calls @return [Hash] the information for the message     - [Integer] ts the Unix timestamp from when this message was sent     - [String] <em>id the message's unique id     - [String] sender the email address of the sender     - [String] template the unique name of the template used, if any     - [String] subject the message's subject line     - [String] email the recipient email address     - [Array] tags list of tags on this message         - [String] tags[] individual tag on this message     - [Integer] opens how many times has this message been opened     - [Array] opens</em>detail list of individual opens for the message         - [Hash] opens_detail[] information on an individual open             - [Integer] ts the unix timestamp from when the message was opened             - [String] ip the IP address that generated the open             - [String] location the approximate region and country that the opening IP is located             - [String] ua the email client or browser data of the open     - [Integer] clicks how many times has a link been clicked in this message     - [Array] clicks_detail list of individual clicks for the message         - [Hash] clicks_detail[] information on an individual click             - [Integer] ts the unix timestamp from when the message was clicked             - [String] url the URL that was clicked on             - [String] ip the IP address that generated the click             - [String] location the approximate region and country that the clicking IP is located             - [String] ua the email client or browser data of the click     - [String] state sending status of this message: sent, bounced, rejected     - [Hash] metadata any custom metadata provided when the message was sent     - [Array] smtp_events a log of up to 3 smtp events for the message         - [Hash] smtp_events[] information about a specific smtp event             - [Integer] ts the Unix timestamp when the event occured             - [String] type the message's state as a result of this event             - [String] diag the SMTP response from the recipient's server</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#list_scheduled%28to%3Dnil%29-instance-method" class="signature"><strong>#list_scheduled</strong>(to = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Queries your scheduled emails.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#parse%28raw_message%29-instance-method" class="signature"><strong>#parse</strong>(raw_message)</a>
+        
+          <div class="summary"><p>Parse the full MIME document for an email message, returning the content of the message broken into its constituent pieces @param [String] raw_message the full MIME document of an email message @return [Hash] the parsed message     - [String] subject the subject of the message     - [String] from_email the email address of the sender     - [String] from_name the alias of the sender (if any)     - [Array] to an array of any recipients in the message         - [Hash] to[] the information on a single recipient             - [String] email the email address of the recipient             - [String] name the alias of the recipient (if any)     - [Hash] headers the key-value pairs of the MIME headers for the message's main document     - [String] text the text part of the message, if any     - [String] html the HTML part of the message, if any     - [Array] attachments an array of any attachments that can be found in the message         - [Hash] attachments[] information about an individual attachment             - [String] name the file name of the attachment             - [String] type the MIME type of the attachment             - [Boolean] binary if this is set to true, the attachment is not pure-text, and the content will be base64 encoded             - [String] content the content of the attachment as a text string or a base64 encoded string based on the attachment type     - [Array] images an array of any embedded images that can be found in the message         - [Hash] images[] information about an individual image             - [String] name the Content-ID of the embedded image             - [String] type the MIME type of the image             - [String] content the content of the image as a base64 encoded string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#reschedule%28id%2Csend_at%29-instance-method" class="signature"><strong>#reschedule</strong>(id, send_at)</a>
+        
+          <div class="summary"><p>Reschedules a scheduled email.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#search%28query%3D%26%2339%3B%2A%26%2339%3B%2Cdate_from%3Dnil%2Cdate_to%3Dnil%2Ctags%3Dnil%2Csenders%3Dnil%2Capi_keys%3Dnil%2Climit%3D100%29-instance-method" class="signature"><strong>#search</strong>(query = <span class="s">&#39;*&#39;</span>, date_from = <span class="n">nil</span>, date_to = <span class="n">nil</span>, tags = <span class="n">nil</span>, senders = <span class="n">nil</span>, api_keys = <span class="n">nil</span>, limit = <span class="n">100</span>)</a>
+        
+          <div class="summary"><p>Search recently sent messages and optionally narrow by date range, tags, senders, and API keys.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#search_time_series%28query%3D%26%2339%3B%2A%26%2339%3B%2Cdate_from%3Dnil%2Cdate_to%3Dnil%2Ctags%3Dnil%2Csenders%3Dnil%29-instance-method" class="signature"><strong>#search_time_series</strong>(query = <span class="s">&#39;*&#39;</span>, date_from = <span class="n">nil</span>, date_to = <span class="n">nil</span>, tags = <span class="n">nil</span>, senders = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Search the content of recently sent messages and return the aggregated hourly stats for matching messages @param [String] query the search terms to find matching messages for @param [String] date_from start date @param [String] date_to end date @param [Array] tags an array of tag names to narrow the search to, will return messages that contain ANY of the tags @param [Array] senders an array of sender addresses to narrow the search to, will return messages sent by ANY of the senders @return [Array] the array of history information     - [Hash] return[] the stats for a single hour         - [String] time the hour as a UTC date string in YYYY-MM-DD HH:MM:SS format         - [Integer] sent the number of emails that were sent during the hour         - [Integer] hard_bounces the number of emails that hard bounced during the hour         - [Integer] soft_bounces the number of emails that soft bounced during the hour         - [Integer] rejects the number of emails that were rejected during the hour         - [Integer] complaints the number of spam complaints received during the hour         - [Integer] unsubs the number of unsubscribes received during the hour         - [Integer] opens the number of emails opened during the hour         - [Integer] unique_opens the number of unique opens generated by messages sent during the hour         - [Integer] clicks the number of tracked URLs clicked during the hour         - [Integer] unique_clicks the number of unique clicks generated by messages sent during the hour</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#send%28message%2Casync%3Dfalse%2Cip_pool%3Dnil%2Csend_at%3Dnil%29-instance-method" class="signature"><strong>#send</strong>(message, async = <span class="n">false</span>, ip_pool = <span class="n">nil</span>, send_at = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Send a new transactional message through Mandrill @param [Hash] message the information on the message to send     - [String] html the full HTML content to be sent     - [String] text optional full text content to be sent     - [String] subject the message subject     - [String] from_email the sender email address.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#send_raw%28raw_message%2Cfrom_email%3Dnil%2Cfrom_name%3Dnil%2Cto%3Dnil%2Casync%3Dfalse%2Cip_pool%3Dnil%2Csend_at%3Dnil%2Creturn_path_domain%3Dnil%29-instance-method" class="signature"><strong>#send_raw</strong>(raw_message, from_email = <span class="n">nil</span>, from_name = <span class="n">nil</span>, to = <span class="n">nil</span>, async = <span class="n">false</span>, ip_pool = <span class="n">nil</span>, send_at = <span class="n">nil</span>, return_path_domain = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Take a raw MIME document for a message, and send it exactly as if it were sent through Mandrill's SMTP servers @param [String] raw_message the full MIME document of an email message @param [String, nil] from_email optionally define the sender address - otherwise we'll use the address found in the provided headers @param [String, nil] from_name optionally define the sender alias @param [Array, nil] to optionally define the recipients to receive the message - otherwise we'll use the To, Cc, and Bcc headers provided in the document     - [String] to[] the email address of the recipient @param [Boolean] async enable a background sending mode that is optimized for bulk sending.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#send_template%28template_name%2Ctemplate_content%2Cmessage%2Casync%3Dfalse%2Cip_pool%3Dnil%2Csend_at%3Dnil%29-instance-method" class="signature"><strong>#send_template</strong>(template_name, template_content, message, async = <span class="n">false</span>, ip_pool = <span class="n">nil</span>, send_at = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Send a new transactional message through Mandrill using a template @param [String] template_name the immutable name or slug of a template that exists in the user's account.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(master)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(master)
+
+        <a class="method-permalink" href="#new%28master%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill/api.cr#L1669" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="cancel_scheduled(id)-instance-method">
+      <div class="signature">
+        
+        def <strong>cancel_scheduled</strong>(id)
+
+        <a class="method-permalink" href="#cancel_scheduled%28id%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Cancels a scheduled email.
+@param [String] id a scheduled email id, as returned by any of the messages/send calls or messages/list-scheduled
+@return [Hash] information about the scheduled email that was cancelled.</p>
+
+<pre><code><span class="o">-</span> [<span class="t">String</span>] _id the scheduled message id
+<span class="o">-</span> [<span class="t">String</span>] created_at the <span class="t">UTC</span> timestamp <span class="k">when</span> the message was created, <span class="k">in</span> <span class="t">YYYY</span><span class="o">-</span><span class="t">MM</span><span class="o">-</span><span class="t">DD</span> <span class="t">HH</span><span class="n">:MM</span><span class="n">:SS</span> format
+<span class="o">-</span> [<span class="t">String</span>] send_at the <span class="t">UTC</span> timestamp <span class="k">when</span> the message will be sent, <span class="k">in</span> <span class="t">YYYY</span><span class="o">-</span><span class="t">MM</span><span class="o">-</span><span class="t">DD</span> <span class="t">HH</span><span class="n">:MM</span><span class="n">:SS</span> format
+<span class="o">-</span> [<span class="t">String</span>] from_email the email</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill/api.cr#L2031" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="content(id)-instance-method">
+      <div class="signature">
+        
+        def <strong>content</strong>(id)
+
+        <a class="method-permalink" href="#content%28id%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Get the full content of a recently sent message
+@param [String] id the unique id of the message to get - passed as the "_id" field in webhooks, send calls, or search calls
+@return [Hash] the content of the message</p>
+
+<pre><code><span class="o">-</span> [<span class="t">Integer</span>] ts the <span class="t">Unix</span> timestamp from <span class="k">when</span> this message was sent
+<span class="o">-</span> [<span class="t">String</span>] _id the message</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill/api.cr#L1952" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="info(id)-instance-method">
+      <div class="signature">
+        
+        def <strong>info</strong>(id)
+
+        <a class="method-permalink" href="#info%28id%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Get the information for a single recently sent message
+@param [String] id the unique id of the message to get - passed as the "_id" field in webhooks, send calls, or search calls
+@return [Hash] the information for the message</p>
+
+<pre><code><span class="o">-</span> [<span class="t">Integer</span>] ts the <span class="t">Unix</span> timestamp from <span class="k">when</span> this message was sent
+<span class="o">-</span> [<span class="t">String</span>] _id the message</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill/api.cr#L1926" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="list_scheduled(to=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>list_scheduled</strong>(to = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#list_scheduled%28to%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Queries your scheduled emails.
+@param [String] to an optional recipient address to restrict results to
+@return [Array] a list of up to 1000 scheduled emails</p>
+
+<pre><code><span class="o">-</span> [<span class="t">Hash</span>] <span class="k">return</span><span class="o">[]</span> a scheduled email
+    <span class="o">-</span> [<span class="t">String</span>] _id the scheduled message id
+    <span class="o">-</span> [<span class="t">String</span>] created_at the <span class="t">UTC</span> timestamp <span class="k">when</span> the message was created, <span class="k">in</span> <span class="t">YYYY</span><span class="o">-</span><span class="t">MM</span><span class="o">-</span><span class="t">DD</span> <span class="t">HH</span><span class="n">:MM</span><span class="n">:SS</span> format
+    <span class="o">-</span> [<span class="t">String</span>] send_at the <span class="t">UTC</span> timestamp <span class="k">when</span> the message will be sent, <span class="k">in</span> <span class="t">YYYY</span><span class="o">-</span><span class="t">MM</span><span class="o">-</span><span class="t">DD</span> <span class="t">HH</span><span class="n">:MM</span><span class="n">:SS</span> format
+    <span class="o">-</span> [<span class="t">String</span>] from_email the email</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill/api.cr#L2017" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="parse(raw_message)-instance-method">
+      <div class="signature">
+        
+        def <strong>parse</strong>(raw_message)
+
+        <a class="method-permalink" href="#parse%28raw_message%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Parse the full MIME document for an email message, returning the content of the message broken into its constituent pieces
+@param [String] raw_message the full MIME document of an email message
+@return [Hash] the parsed message</p>
+
+<pre><code><span class="o">-</span> [<span class="t">String</span>] subject the subject <span class="k">of</span> the message
+<span class="o">-</span> [<span class="t">String</span>] from_email the email address <span class="k">of</span> the sender
+<span class="o">-</span> [<span class="t">String</span>] from_name the <span class="k">alias</span> <span class="k">of</span> the sender (<span class="k">if</span> any)
+<span class="o">-</span> [<span class="t">Array</span>] to an array <span class="k">of</span> any recipients <span class="k">in</span> the message
+    <span class="o">-</span> [<span class="t">Hash</span>] to<span class="o">[]</span> the information on a single recipient
+        <span class="o">-</span> [<span class="t">String</span>] email the email address <span class="k">of</span> the recipient
+        <span class="o">-</span> [<span class="t">String</span>] name the <span class="k">alias</span> <span class="k">of</span> the recipient (<span class="k">if</span> any)
+<span class="o">-</span> [<span class="t">Hash</span>] headers the key<span class="o">-</span>value pairs <span class="k">of</span> the <span class="t">MIME</span> headers <span class="k">for</span> the message</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill/api.cr#L1981" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="reschedule(id,send_at)-instance-method">
+      <div class="signature">
+        
+        def <strong>reschedule</strong>(id, send_at)
+
+        <a class="method-permalink" href="#reschedule%28id%2Csend_at%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Reschedules a scheduled email.
+@param [String] id a scheduled email id, as returned by any of the messages/send calls or messages/list-scheduled
+@param [String] send_at the new UTC timestamp when the message should sent. Mandrill can't time travel, so if you specify a time in past the message will be sent immediately
+@return [Hash] information about the scheduled email that was rescheduled.</p>
+
+<pre><code><span class="o">-</span> [<span class="t">String</span>] _id the scheduled message id
+<span class="o">-</span> [<span class="t">String</span>] created_at the <span class="t">UTC</span> timestamp <span class="k">when</span> the message was created, <span class="k">in</span> <span class="t">YYYY</span><span class="o">-</span><span class="t">MM</span><span class="o">-</span><span class="t">DD</span> <span class="t">HH</span><span class="n">:MM</span><span class="n">:SS</span> format
+<span class="o">-</span> [<span class="t">String</span>] send_at the <span class="t">UTC</span> timestamp <span class="k">when</span> the message will be sent, <span class="k">in</span> <span class="t">YYYY</span><span class="o">-</span><span class="t">MM</span><span class="o">-</span><span class="t">DD</span> <span class="t">HH</span><span class="n">:MM</span><span class="n">:SS</span> format
+<span class="o">-</span> [<span class="t">String</span>] from_email the email</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill/api.cr#L2046" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="search(query=&amp;#39;*&amp;#39;,date_from=nil,date_to=nil,tags=nil,senders=nil,api_keys=nil,limit=100)-instance-method">
+      <div class="signature">
+        
+        def <strong>search</strong>(query = <span class="s">&#39;*&#39;</span>, date_from = <span class="n">nil</span>, date_to = <span class="n">nil</span>, tags = <span class="n">nil</span>, senders = <span class="n">nil</span>, api_keys = <span class="n">nil</span>, limit = <span class="n">100</span>)
+
+        <a class="method-permalink" href="#search%28query%3D%26%2339%3B%2A%26%2339%3B%2Cdate_from%3Dnil%2Cdate_to%3Dnil%2Ctags%3Dnil%2Csenders%3Dnil%2Capi_keys%3Dnil%2Climit%3D100%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Search recently sent messages and optionally narrow by date range, tags, senders, and API keys. If no date range is specified, results within the last 7 days are returned. This method may be called up to 20 times per minute. If you need the data more often, you can use &lt;a href="/api/docs/messages.html#method=info">/messages/info.json&lt;/a> to get the information for a single message, or &lt;a href="http://help.mandrill.com/entries/21738186-Introduction-to-Webhooks">webhooks&lt;/a> to push activity to your own application for querying.
+@param [String] query &lt;a href="http://help.mandrill.com/entries/22211902">search terms&lt;/a> to find matching messages
+@param [String] date_from start date
+@param [String] date_to end date
+@param [Array] tags an array of tag names to narrow the search to, will return messages that contain ANY of the tags
+@param [Array] senders an array of sender addresses to narrow the search to, will return messages sent by ANY of the senders
+@param [Array] api_keys an array of API keys to narrow the search to, will return messages sent by ANY of the keys
+@param [Integer] limit the maximum number of results to return, defaults to 100, 1000 is the maximum
+@return [Array] of structs for each matching message</p>
+
+<pre><code><span class="o">-</span> [<span class="t">Hash</span>] <span class="k">return</span><span class="o">[]</span> the information <span class="k">for</span> a single matching message
+    <span class="o">-</span> [<span class="t">Integer</span>] ts the <span class="t">Unix</span> timestamp from <span class="k">when</span> this message was sent
+    <span class="o">-</span> [<span class="t">String</span>] _id the message</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill/api.cr#L1864" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="search_time_series(query=&amp;#39;*&amp;#39;,date_from=nil,date_to=nil,tags=nil,senders=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>search_time_series</strong>(query = <span class="s">&#39;*&#39;</span>, date_from = <span class="n">nil</span>, date_to = <span class="n">nil</span>, tags = <span class="n">nil</span>, senders = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#search_time_series%28query%3D%26%2339%3B%2A%26%2339%3B%2Cdate_from%3Dnil%2Cdate_to%3Dnil%2Ctags%3Dnil%2Csenders%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Search the content of recently sent messages and return the aggregated hourly stats for matching messages
+@param [String] query the search terms to find matching messages for
+@param [String] date_from start date
+@param [String] date_to end date
+@param [Array] tags an array of tag names to narrow the search to, will return messages that contain ANY of the tags
+@param [Array] senders an array of sender addresses to narrow the search to, will return messages sent by ANY of the senders
+@return [Array] the array of history information</p>
+
+<pre><code><span class="o">-</span> [<span class="t">Hash</span>] <span class="k">return</span><span class="o">[]</span> the stats <span class="k">for</span> a single hour
+    <span class="o">-</span> [<span class="t">String</span>] time the hour <span class="k">as</span> a <span class="t">UTC</span> date string <span class="k">in</span> <span class="t">YYYY</span><span class="o">-</span><span class="t">MM</span><span class="o">-</span><span class="t">DD</span> <span class="t">HH</span><span class="n">:MM</span><span class="n">:SS</span> format
+    <span class="o">-</span> [<span class="t">Integer</span>] sent the number <span class="k">of</span> emails that were sent during the hour
+    <span class="o">-</span> [<span class="t">Integer</span>] hard_bounces the number <span class="k">of</span> emails that hard bounced during the hour
+    <span class="o">-</span> [<span class="t">Integer</span>] soft_bounces the number <span class="k">of</span> emails that soft bounced during the hour
+    <span class="o">-</span> [<span class="t">Integer</span>] rejects the number <span class="k">of</span> emails that were rejected during the hour
+    <span class="o">-</span> [<span class="t">Integer</span>] complaints the number <span class="k">of</span> spam complaints received during the hour
+    <span class="o">-</span> [<span class="t">Integer</span>] unsubs the number <span class="k">of</span> unsubscribes received during the hour
+    <span class="o">-</span> [<span class="t">Integer</span>] opens the number <span class="k">of</span> emails opened during the hour
+    <span class="o">-</span> [<span class="t">Integer</span>] unique_opens the number <span class="k">of</span> unique opens generated by messages sent during the hour
+    <span class="o">-</span> [<span class="t">Integer</span>] clicks the number <span class="k">of</span> tracked <span class="t">URLs</span> clicked during the hour
+    <span class="o">-</span> [<span class="t">Integer</span>] unique_clicks the number <span class="k">of</span> unique clicks generated by messages sent during the hour</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill/api.cr#L1888" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="send(message,async=false,ip_pool=nil,send_at=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>send</strong>(message, async = <span class="n">false</span>, ip_pool = <span class="n">nil</span>, send_at = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#send%28message%2Casync%3Dfalse%2Cip_pool%3Dnil%2Csend_at%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Send a new transactional message through Mandrill
+@param [Hash] message the information on the message to send</p>
+
+<pre><code><span class="o">-</span> [<span class="t">String</span>] html the full <span class="t">HTML</span> content to be sent
+<span class="o">-</span> [<span class="t">String</span>] text optional full text content to be sent
+<span class="o">-</span> [<span class="t">String</span>] subject the message subject
+<span class="o">-</span> [<span class="t">String</span>] from_email the sender email address.
+<span class="o">-</span> [<span class="t">String</span>] from_name optional from name to be used
+<span class="o">-</span> [<span class="t">Array</span>] to an array <span class="k">of</span> recipient information.
+    <span class="o">-</span> [<span class="t">Hash</span>] to<span class="o">[]</span> a single recipient</code></pre>
+
+<p>@param [Boolean] async enable a background sending mode that is optimized for bulk sending. In async mode, messages/send will immediately return a status of "queued" for every recipient. To handle rejections when sending in async mode, set up a webhook for the 'reject' event. Defaults to false for messages with no more than 10 recipients; messages with more than 10 recipients are always sent asynchronously, regardless of the value of async.
+@param [String] ip_pool the name of the dedicated ip pool that should be used to send the message. If you do not have any dedicated IPs, this parameter has no effect. If you specify a pool that does not exist, your default pool will be used instead.
+@param [String] send_at when this message should be sent as a UTC timestamp in YYYY-MM-DD HH:MM:SS format. If you specify a time in the past, the message will be sent immediately. An additional fee applies for scheduled email, and this feature is only available to accounts with a positive balance.
+@return [Array] of structs for each recipient containing the key "email" with the email address, and details of the message status for that recipient</p>
+
+<pre><code><span class="o">-</span> [<span class="t">Hash</span>] <span class="k">return</span><span class="o">[]</span> the sending results <span class="k">for</span> a single recipient
+    <span class="o">-</span> [<span class="t">String</span>] email the email address <span class="k">of</span> the recipient
+    <span class="o">-</span> [<span class="t">String</span>] status the sending status <span class="k">of</span> the recipient <span class="o">-</span> either <span class="s">&quot;sent&quot;</span>, <span class="s">&quot;queued&quot;</span>, <span class="s">&quot;scheduled&quot;</span>, <span class="s">&quot;rejected&quot;</span>, or <span class="s">&quot;invalid&quot;</span>
+    <span class="o">-</span> [<span class="t">String</span>] reject_reason the reason <span class="k">for</span> the rejection <span class="k">if</span> the recipient status is <span class="s">&quot;rejected&quot;</span> <span class="o">-</span> one <span class="k">of</span> <span class="s">&quot;hard-bounce&quot;</span>, <span class="s">&quot;soft-bounce&quot;</span>, <span class="s">&quot;spam&quot;</span>, <span class="s">&quot;unsub&quot;</span>, <span class="s">&quot;custom&quot;</span>, <span class="s">&quot;invalid-sender&quot;</span>, <span class="s">&quot;invalid&quot;</span>, <span class="s">&quot;test-mode-limit&quot;</span>, or <span class="s">&quot;rule&quot;</span>
+    <span class="o">-</span> [<span class="t">String</span>] _id the message</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill/api.cr#L1741" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="send_raw(raw_message,from_email=nil,from_name=nil,to=nil,async=false,ip_pool=nil,send_at=nil,return_path_domain=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>send_raw</strong>(raw_message, from_email = <span class="n">nil</span>, from_name = <span class="n">nil</span>, to = <span class="n">nil</span>, async = <span class="n">false</span>, ip_pool = <span class="n">nil</span>, send_at = <span class="n">nil</span>, return_path_domain = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#send_raw%28raw_message%2Cfrom_email%3Dnil%2Cfrom_name%3Dnil%2Cto%3Dnil%2Casync%3Dfalse%2Cip_pool%3Dnil%2Csend_at%3Dnil%2Creturn_path_domain%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Take a raw MIME document for a message, and send it exactly as if it were sent through Mandrill's SMTP servers
+@param [String] raw_message the full MIME document of an email message
+@param [String, nil] from_email optionally define the sender address - otherwise we'll use the address found in the provided headers
+@param [String, nil] from_name optionally define the sender alias
+@param [Array, nil] to optionally define the recipients to receive the message - otherwise we'll use the To, Cc, and Bcc headers provided in the document</p>
+
+<pre><code><span class="o">-</span> [<span class="t">String</span>] to<span class="o">[]</span> the email address <span class="k">of</span> the recipient</code></pre>
+
+<p>@param [Boolean] async enable a background sending mode that is optimized for bulk sending. In async mode, messages/sendRaw will immediately return a status of "queued" for every recipient. To handle rejections when sending in async mode, set up a webhook for the 'reject' event. Defaults to false for messages with no more than 10 recipients; messages with more than 10 recipients are always sent asynchronously, regardless of the value of async.
+@param [String] ip_pool the name of the dedicated ip pool that should be used to send the message. If you do not have any dedicated IPs, this parameter has no effect. If you specify a pool that does not exist, your default pool will be used instead.
+@param [String] send_at when this message should be sent as a UTC timestamp in YYYY-MM-DD HH:MM:SS format. If you specify a time in the past, the message will be sent immediately.
+@param [String] return_path_domain a custom domain to use for the messages's return-path
+@return [Array] of structs for each recipient containing the key "email" with the email address, and details of the message status for that recipient</p>
+
+<pre><code><span class="o">-</span> [<span class="t">Hash</span>] <span class="k">return</span><span class="o">[]</span> the sending results <span class="k">for</span> a single recipient
+    <span class="o">-</span> [<span class="t">String</span>] email the email address <span class="k">of</span> the recipient
+    <span class="o">-</span> [<span class="t">String</span>] status the sending status <span class="k">of</span> the recipient <span class="o">-</span> either <span class="s">&quot;sent&quot;</span>, <span class="s">&quot;queued&quot;</span>, <span class="s">&quot;scheduled&quot;</span>, <span class="s">&quot;rejected&quot;</span>, or <span class="s">&quot;invalid&quot;</span>
+    <span class="o">-</span> [<span class="t">String</span>] reject_reason the reason <span class="k">for</span> the rejection <span class="k">if</span> the recipient status is <span class="s">&quot;rejected&quot;</span> <span class="o">-</span> one <span class="k">of</span> <span class="s">&quot;hard-bounce&quot;</span>, <span class="s">&quot;soft-bounce&quot;</span>, <span class="s">&quot;spam&quot;</span>, <span class="s">&quot;unsub&quot;</span>, <span class="s">&quot;custom&quot;</span>, <span class="s">&quot;invalid-sender&quot;</span>, <span class="s">&quot;invalid&quot;</span>, <span class="s">&quot;test-mode-limit&quot;</span>, or <span class="s">&quot;rule&quot;</span>
+    <span class="o">-</span> [<span class="t">String</span>] _id the message</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill/api.cr#L2002" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="send_template(template_name,template_content,message,async=false,ip_pool=nil,send_at=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>send_template</strong>(template_name, template_content, message, async = <span class="n">false</span>, ip_pool = <span class="n">nil</span>, send_at = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#send_template%28template_name%2Ctemplate_content%2Cmessage%2Casync%3Dfalse%2Cip_pool%3Dnil%2Csend_at%3Dnil%29-instance-method">#</a>
+      </div>
+      
+        <div class="doc"><p>Send a new transactional message through Mandrill using a template
+@param [String] template_name the immutable name or slug of a template that exists in the user's account. For backwards-compatibility, the template name may also be used but the immutable slug is preferred.
+@param [Array] template_content an array of template content to send.  Each item in the array should be a struct with two keys - name: the name of the content block to set the content for, and content: the actual content to put into the block</p>
+
+<pre><code><span class="o">-</span> [<span class="t">Hash</span>] template_content<span class="o">[]</span> the injection <span class="k">of</span> a single piece <span class="k">of</span> content into a single editable region
+    <span class="o">-</span> [<span class="t">String</span>] name the name <span class="k">of</span> the mc<span class="n">:edit</span> editable region to inject into
+    <span class="o">-</span> [<span class="t">String</span>] content the content to inject</code></pre>
+
+<p>@param [Hash] message the other information on the message to send - same as /messages/send, but without the html content</p>
+
+<pre><code><span class="o">-</span> [<span class="t">String</span>] html optional full <span class="t">HTML</span> content to be sent <span class="k">if</span> not <span class="k">in</span> template
+<span class="o">-</span> [<span class="t">String</span>] text optional full text content to be sent
+<span class="o">-</span> [<span class="t">String</span>] subject the message subject
+<span class="o">-</span> [<span class="t">String</span>] from_email the sender email address.
+<span class="o">-</span> [<span class="t">String</span>] from_name optional from name to be used
+<span class="o">-</span> [<span class="t">Array</span>] to an array <span class="k">of</span> recipient information.
+    <span class="o">-</span> [<span class="t">Hash</span>] to<span class="o">[]</span> a single recipient</code></pre>
+
+<p>@param [Boolean] async enable a background sending mode that is optimized for bulk sending. In async mode, messages/send will immediately return a status of "queued" for every recipient. To handle rejections when sending in async mode, set up a webhook for the 'reject' event. Defaults to false for messages with no more than 10 recipients; messages with more than 10 recipients are always sent asynchronously, regardless of the value of async.
+@param [String] ip_pool the name of the dedicated ip pool that should be used to send the message. If you do not have any dedicated IPs, this parameter has no effect. If you specify a pool that does not exist, your default pool will be used instead.
+@param [String] send_at when this message should be sent as a UTC timestamp in YYYY-MM-DD HH:MM:SS format. If you specify a time in the past, the message will be sent immediately. An additional fee applies for scheduled email, and this feature is only available to accounts with a positive balance.
+@return [Array] of structs for each recipient containing the key "email" with the email address, and details of the message status for that recipient</p>
+
+<pre><code><span class="o">-</span> [<span class="t">Hash</span>] <span class="k">return</span><span class="o">[]</span> the sending results <span class="k">for</span> a single recipient
+    <span class="o">-</span> [<span class="t">String</span>] email the email address <span class="k">of</span> the recipient
+    <span class="o">-</span> [<span class="t">String</span>] status the sending status <span class="k">of</span> the recipient <span class="o">-</span> either <span class="s">&quot;sent&quot;</span>, <span class="s">&quot;queued&quot;</span>, <span class="s">&quot;rejected&quot;</span>, or <span class="s">&quot;invalid&quot;</span>
+    <span class="o">-</span> [<span class="t">String</span>] reject_reason the reason <span class="k">for</span> the rejection <span class="k">if</span> the recipient status is <span class="s">&quot;rejected&quot;</span> <span class="o">-</span> one <span class="k">of</span> <span class="s">&quot;hard-bounce&quot;</span>, <span class="s">&quot;soft-bounce&quot;</span>, <span class="s">&quot;spam&quot;</span>, <span class="s">&quot;unsub&quot;</span>, <span class="s">&quot;custom&quot;</span>, <span class="s">&quot;invalid-sender&quot;</span>, <span class="s">&quot;invalid&quot;</span>, <span class="s">&quot;test-mode-limit&quot;</span>, or <span class="s">&quot;rule&quot;</span>
+    <span class="o">-</span> [<span class="t">String</span>] _id the message</code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill/api.cr#L1819" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>

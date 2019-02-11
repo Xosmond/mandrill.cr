@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.26.1">
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/doc.js"></script>
+<script type="text/javascript">
+  CrystalDoc.base_path = "../";
+</script>
+
+  <meta id="repository-name" content="github.com/Xosmond/mandrill.cr">
+  <title>Mandrill::API - github.com/Xosmond/mandrill.cr</title>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="github.com/Xosmond/mandrill.cr/Mandrill" data-name="mandrill">
+      <a href="../Mandrill.html">Mandrill</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="github.com/Xosmond/mandrill.cr/Mandrill/API" data-name="mandrill::api">
+      <a href="../Mandrill/API.html">API</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Exports" data-name="mandrill::exports">
+      <a href="../Mandrill/Exports.html">Exports</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Inbound" data-name="mandrill::inbound">
+      <a href="../Mandrill/Inbound.html">Inbound</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Internal" data-name="mandrill::internal">
+      <a href="../Mandrill/Internal.html">Internal</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Ips" data-name="mandrill::ips">
+      <a href="../Mandrill/Ips.html">Ips</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Messages" data-name="mandrill::messages">
+      <a href="../Mandrill/Messages.html">Messages</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Metadata" data-name="mandrill::metadata">
+      <a href="../Mandrill/Metadata.html">Metadata</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Rejects" data-name="mandrill::rejects">
+      <a href="../Mandrill/Rejects.html">Rejects</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Senders" data-name="mandrill::senders">
+      <a href="../Mandrill/Senders.html">Senders</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Subaccounts" data-name="mandrill::subaccounts">
+      <a href="../Mandrill/Subaccounts.html">Subaccounts</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Tags" data-name="mandrill::tags">
+      <a href="../Mandrill/Tags.html">Tags</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Templates" data-name="mandrill::templates">
+      <a href="../Mandrill/Templates.html">Templates</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Urls" data-name="mandrill::urls">
+      <a href="../Mandrill/Urls.html">Urls</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Users" data-name="mandrill::users">
+      <a href="../Mandrill/Users.html">Users</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Webhooks" data-name="mandrill::webhooks">
+      <a href="../Mandrill/Webhooks.html">Webhooks</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/mandrill.cr/Mandrill/Whitelists" data-name="mandrill::whitelists">
+      <a href="../Mandrill/Whitelists.html">Whitelists</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Mandrill::API
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Mandrill/API.html">Mandrill::API</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L7" target="_blank">
+        mandrill.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28apikey%3Dnil%2Cdebug%3Dfalse%29-class-method" class="signature"><strong>.new</strong>(apikey = <span class="n">nil</span>, debug = <span class="n">false</span>)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#call%28url%2Cparams%29-instance-method" class="signature"><strong>#call</strong>(url, params)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#exports-instance-method" class="signature"><strong>#exports</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#inbound-instance-method" class="signature"><strong>#inbound</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#internal-instance-method" class="signature"><strong>#internal</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ips-instance-method" class="signature"><strong>#ips</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#key%3AString-instance-method" class="signature"><strong>#key</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#messages-instance-method" class="signature"><strong>#messages</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#metadata-instance-method" class="signature"><strong>#metadata</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#rejects-instance-method" class="signature"><strong>#rejects</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#senders-instance-method" class="signature"><strong>#senders</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#subaccounts-instance-method" class="signature"><strong>#subaccounts</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#tags-instance-method" class="signature"><strong>#tags</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#templates-instance-method" class="signature"><strong>#templates</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#urls-instance-method" class="signature"><strong>#urls</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#users-instance-method" class="signature"><strong>#users</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#webhooks-instance-method" class="signature"><strong>#webhooks</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#whitelists-instance-method" class="signature"><strong>#whitelists</strong></a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(apikey=nil,debug=false)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(apikey = <span class="n">nil</span>, debug = <span class="n">false</span>)
+
+        <a class="method-permalink" href="#new%28apikey%3Dnil%2Cdebug%3Dfalse%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L14" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="call(url,params)-instance-method">
+      <div class="signature">
+        
+        def <strong>call</strong>(url, params)
+
+        <a class="method-permalink" href="#call%28url%2Cparams%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L38" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="exports-instance-method">
+      <div class="signature">
+        
+        def <strong>exports</strong>
+
+        <a class="method-permalink" href="#exports-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L47" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="inbound-instance-method">
+      <div class="signature">
+        
+        def <strong>inbound</strong>
+
+        <a class="method-permalink" href="#inbound-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L59" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="internal-instance-method">
+      <div class="signature">
+        
+        def <strong>internal</strong>
+
+        <a class="method-permalink" href="#internal-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L79" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ips-instance-method">
+      <div class="signature">
+        
+        def <strong>ips</strong>
+
+        <a class="method-permalink" href="#ips-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L75" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="key:String-instance-method">
+      <div class="signature">
+        
+        def <strong>key</strong> : String
+
+        <a class="method-permalink" href="#key%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L34" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="messages-instance-method">
+      <div class="signature">
+        
+        def <strong>messages</strong>
+
+        <a class="method-permalink" href="#messages-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L67" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="metadata-instance-method">
+      <div class="signature">
+        
+        def <strong>metadata</strong>
+
+        <a class="method-permalink" href="#metadata-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L99" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="rejects-instance-method">
+      <div class="signature">
+        
+        def <strong>rejects</strong>
+
+        <a class="method-permalink" href="#rejects-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L55" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="senders-instance-method">
+      <div class="signature">
+        
+        def <strong>senders</strong>
+
+        <a class="method-permalink" href="#senders-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L95" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="subaccounts-instance-method">
+      <div class="signature">
+        
+        def <strong>subaccounts</strong>
+
+        <a class="method-permalink" href="#subaccounts-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L83" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="tags-instance-method">
+      <div class="signature">
+        
+        def <strong>tags</strong>
+
+        <a class="method-permalink" href="#tags-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L63" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="templates-instance-method">
+      <div class="signature">
+        
+        def <strong>templates</strong>
+
+        <a class="method-permalink" href="#templates-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L43" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="urls-instance-method">
+      <div class="signature">
+        
+        def <strong>urls</strong>
+
+        <a class="method-permalink" href="#urls-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L87" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="users-instance-method">
+      <div class="signature">
+        
+        def <strong>users</strong>
+
+        <a class="method-permalink" href="#users-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L51" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="webhooks-instance-method">
+      <div class="signature">
+        
+        def <strong>webhooks</strong>
+
+        <a class="method-permalink" href="#webhooks-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L91" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="whitelists-instance-method">
+      <div class="signature">
+        
+        def <strong>whitelists</strong>
+
+        <a class="method-permalink" href="#whitelists-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/mandrill.cr/blob/c884e92f669f75788998e063076a07582f880075/src/mandrill.cr#L71" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
