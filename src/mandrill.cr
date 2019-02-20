@@ -2,6 +2,7 @@ require "crest"
 require "json"
 
 require "./mandrill/api"
+require "./mandrill/errors"
 
 module Mandrill
   class API
@@ -37,7 +38,57 @@ module Mandrill
 
     def call(url, params)
       r = @session["#{@path}#{url}.json"].post(form: params)
+
+      cast_error(r.body) if r.status_code != 200
       return JSON.parse(r.body)
+    end
+
+    def cast_error(body)
+      error_map = {
+        "ValidationError"            => ValidationError,
+        "Invalid_Key"                => InvalidKeyError,
+        "PaymentRequired"            => PaymentRequiredError,
+        "Unknown_Subaccount"         => UnknownSubaccountError,
+        "Unknown_Template"           => UnknownTemplateError,
+        "ServiceUnavailable"         => ServiceUnavailableError,
+        "Unknown_Message"            => UnknownMessageError,
+        "Invalid_Tag_Name"           => InvalidTagNameError,
+        "Invalid_Reject"             => InvalidRejectError,
+        "Unknown_Sender"             => UnknownSenderError,
+        "Unknown_Url"                => UnknownUrlError,
+        "Unknown_TrackingDomain"     => UnknownTrackingDomainError,
+        "Invalid_Template"           => InvalidTemplateError,
+        "Unknown_Webhook"            => UnknownWebhookError,
+        "Unknown_InboundDomain"      => UnknownInboundDomainError,
+        "Unknown_InboundRoute"       => UnknownInboundRouteError,
+        "Unknown_Export"             => UnknownExportError,
+        "IP_ProvisionLimit"          => IPProvisionLimitError,
+        "Unknown_Pool"               => UnknownPoolError,
+        "NoSendingHistory"           => NoSendingHistoryError,
+        "PoorReputation"             => PoorReputationError,
+        "Unknown_IP"                 => UnknownIPError,
+        "Invalid_EmptyDefaultPool"   => InvalidEmptyDefaultPoolError,
+        "Invalid_DeleteDefaultPool"  => InvalidDeleteDefaultPoolError,
+        "Invalid_DeleteNonEmptyPool" => InvalidDeleteNonEmptyPoolError,
+        "Invalid_CustomDNS"          => InvalidCustomDNSError,
+        "Invalid_CustomDNSPending"   => InvalidCustomDNSPendingError,
+        "Metadata_FieldLimit"        => MetadataFieldLimitError,
+        "Unknown_MetadataField"      => UnknownMetadataFieldError,
+      }
+
+      begin
+        error_info = JSON.parse(body)
+        if error_info["status"] != "error" || !error_info["name"]
+          raise Error, "We received an unexpected error: #{body}"
+        end
+        if error_map[error_info["name"]]
+          raise error_map[error_info["name"]], error_info["message"]
+        else
+          raise Error, error_info["message"]
+        end
+      rescue JSON::ParserError
+        raise Error, "We received an unexpected error: #{body}"
+      end
     end
 
     def templates
