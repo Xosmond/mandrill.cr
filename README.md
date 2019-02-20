@@ -1,6 +1,7 @@
 # Mandrill
+[![CircleCI](https://circleci.com/gh/Xosmond/mandrill.cr.svg?style=svg)](https://circleci.com/gh/Xosmond/mandrill.cr)
 
-Just migrated almost all implementation from ruby mandrill gem.
+Just migrated ruby mandrill implementation.
 
 ## Requirements
 
