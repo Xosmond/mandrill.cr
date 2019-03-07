@@ -79,15 +79,15 @@ module Mandrill
       begin
         error_info = JSON.parse(body)
         if error_info["status"] != "error" || !error_info["name"]
-          raise Error, "We received an unexpected error: #{body}"
+          raise Error.new("We received an unexpected error: #{body}")
         end
         if error_map[error_info["name"]]
-          raise error_map[error_info["name"]], error_info["message"]
+          raise error_map[error_info["name"]].new(error_info["message"].as_s?)
         else
-          raise Error, error_info["message"]
+          raise Error.new(error_info["message"].as_s?)
         end
-      rescue JSON::ParserError
-        raise Error, "We received an unexpected error: #{body}"
+      rescue JSON::ParseException
+        raise Error.new("We received an unexpected error: #{body}")
       end
     end
 
